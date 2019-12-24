@@ -19,13 +19,156 @@
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<!--Personalised Styles-->
+<style type="text/css">
+body{
+    scroll-behavior: smooth !important;
+}
+.page-wrapperz{
+    scroll-behavior: smooth !important;
+}
+*{
+    scroll-behavior: smooth;
+}
+
+.banner-section{
+	height: 100vh !important;
+	overflow: hidden;
+}
+.banner-section .owl-carousel.owl-loaded{
+	height: 100vh!important;
+}
+.banner-section .owl-stage-outer.owl-height{
+	height: 100vh!important;
+}
+.banner-section .owl-item{
+	height: 100vh!important;
+}
+.banner-section .slide-item{
+	height: 100vh!important;
+}
+.banner-section .owl-carousel .owl-stage{
+	height: 100vh!important;
+}
+    ul.speakers-type-list{
+        position: relative;
+        float: right;
+        right: 55px;
+        z-index: 9;
+        top: -180px;
+        height: 20px;
+        list-style: none;
+        text-align: center;
+        display: block;
+        background: rgba(255,255,255,0.3);
+    }
+    ul.speakers-type-list li{   
+        list-style: none;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 5px;
+        transition: all 0.2s ease-in-out;
+    }
+    ul.speakers-type-list .speakers-active:hover li{
+        display: block !important;
+    }
+    .speakers-active{
+        display: block !important;
+        font-size: 23px!important;
+        color: #12114a!important;
+        
+    }
+    .auto-container .row .speaker-block-two{
+        transition: all 0.3s ease-in-out;
+    }
+    .auto-container .row{
+        transition: all 0.3s ease-in-out;
+    }
+    .speaker-block-two .image img{
+        transition: all 0.2s ease-in-out
+    }
+    .speaker-block-two .image-box .image{
+    	
+    }
+    .events-section{
+    	background-color: rgb(18, 17, 74)!important;
+    	padding-top: 30px;
+    }
+    .events-carousel .content-column .text{
+    	color: #fff;
+    }
+    .Countdown-timer{
+    	width: 100%;
+    	background-color: transparent!important;
+    	font-size: 36px;
+    	text-align: center;
+    	
+    	color: #f20487;
+    	font-weight: lighter;
+    	
+    }
+    .Countdown-timer span{
+    	
+    }
+    .Countdown-timer span.countdown-inner-container{
+    	
+    	display: grid;
+    	grid-template-rows: 1fr 1fr;
+    	grid-gap: 25px;
+    }
+
+    .Countdown-timer span span.countdown-inner-container span{
+    	padding: 0!important;
+    	margin: 0!important;
+    
+    	
+
+
+    	
+    }
+    .Countdown-timer span span.countdown-inner-container .number-part{
+    	font-weight: 800;
+    	font-size: 70px;
+    }
+    
+  @media only screen and (max-width: 900px){
+    ul.speakers-type-list{
+        display: flex;
+        flex-wrap: wrap;
+        right: unset;
+        float: none;
+        top: -30px;
+    }
+    .Countdown-timer span span.countdown-inner-container .number-part{
+    	font-size: 30px;
+    }
+    .Countdown-timer span span.countdown-inner-container span{
+    	padding-right: 0!important;
+    	padding-left: 0!important;
+
+    }
+    .Countdown-timer span.countdown-inner-container{
+    	margin-right: 0px;
+    	grid-gap: 12px;
+    }
+    .Countdown-timer{
+    	font-size: 17px;
+    	font-weight: 400;
+    }
+    .mycontainer .icon.icon-circle-2{
+    	opacity: 0.001 !important;
+    }
+  }
+</style>
+<!--End Personalised Styles-->
+
 </head>
 
 <body>
 
 <div class="page-wrapper">
  	
-    <!-- Preloader -->
+     <!-- Preloader -->
     <div class="preloader"></div>
  	
     <!-- Main Header-->
@@ -110,7 +253,7 @@
                                         </div> -->
                                     <!-- </li> -->
                                     <li><a href="#sch">Schedule</a></li>
-                                    <li><a href="#spk">Speakers</a></li>
+                                    <li><a href="#speakers-section">Speakers</a></li>
                                     <li><a href="#spns">Sponsors</a></li>
                                     <!-- <li class="dropdown"><a href="#">Blog</a>
                                         <ul>
@@ -218,7 +361,7 @@
     <!-- Bnner Section -->
     <section class="banner-section">
         <div class="banner-carousel owl-carousel owl-theme">
-            <div class="slide-item" style="background-image: url(images/main-slider/6.jpg);">
+            <div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/6.jpg); background-size: cover;">
                 <div class="auto-container">
                     <div class="content-box">
                         <h2>TechX</h2>
@@ -230,7 +373,7 @@
                 </div>
             </div>
 
-            <div class="slide-item" style="background-image: url(images/main-slider/7.jpg);">
+            <div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/7.jpg); background-size: cover;">
                 <div class="auto-container clearfix">
                     <div class="content-box">
                         <h2>TechX</h2>
@@ -242,7 +385,7 @@
                 </div>
             </div>
 
-            <div class="slide-item" style="background-image: url(images/main-slider/8.jpg);">
+            <div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/8.jpg); background-size: cover;">
                 <div class="auto-container clearfix">
                     <div class="content-box">
                         <h2>TechX</h2>
@@ -256,6 +399,51 @@
         </div>
     </section>
     <!-- End Bnner Section -->
+
+
+
+    <section class="mycontainer" style="width:100%;background-color: rgb(18, 17, 74)!important;">
+    	<span style="position: relative;">
+    	<span class="icon icon-circle-2" style="position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;left: 20px;
+    top: -10px;
+    opacity: 0.7;
+    transform: scale(0.8);"></span></span>
+    <span style="position: relative; float: right;">
+<span class="icon icon-circle-3" style="position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;right: -14px;
+    top: 70px;
+    opacity: 0.3;
+    transform: scale(0.6);"></span></span>
+    <div class="jumbotron Countdown-timer" id="Countdown-timer">
+    	<span style="white-space: nowrap;display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;">
+    	<span class="countdown-inner-container" style=""><span class="number-part" id="days"></span><span>days</span></span>
+    	<span class="countdown-inner-container"><span class="number-part" id="hours"></span><span>hours</span></span>
+    	<span class="countdown-inner-container"><span class="number-part" id="minutes"></span><span>minutes</span></span>
+    	<span class="countdown-inner-container"><span class="number-part" id="seconds"></span><span>seconds</span></span>
+    	</span>
+    </div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Feature Section Two -->
     <section class="feature-section-two style-two">
         <div class="auto-container">
@@ -322,7 +510,7 @@
                     </div>
 
                     <div class="info-column col-lg-7 col-md-12 col-sm-12">
-                        <div class="inner-column" style="background-image: url(images/resource/abt.jpg);">
+                        <div class="inner-column" style="background-image: url(images/resource/backevents2.png); background-size: contain; background-position: center;">
                             <div class="inner">
                                 <div class="info-box location">
                                     <span class="icon flaticon-location-pin"></span>
@@ -357,7 +545,7 @@
                     </div>
 
                     <div class="info-column col-lg-7 col-md-12 col-sm-12">
-                        <div class="inner-column" style="background-image: url(images/resource/abt.jpg);">
+                        <div class="inner-column" style="background-image: url(images/resource/backevents2.png); background-size: contain; background-position: center;">
                             <div class="inner">
                                 <div class="info-box location">
                                     <span class="icon flaticon-location-pin"></span>
@@ -392,7 +580,7 @@
                     </div>
 
                     <div class="info-column col-lg-7 col-md-12 col-sm-12">
-                        <div class="inner-column" style="background-image: url(images/resource/abt.jpg);">
+                        <div class="inner-column" style="background-image: url(images/resource/backevents2.png); background-size: contain; background-position: center;">
                             <div class="inner">
                                 <div class="info-box location">
                                     <span class="icon flaticon-location-pin"></span>
@@ -898,212 +1086,161 @@
     <!--End Event Highlight -->
 
     <!-- Speakers Section -->
-    <section class="speakers-section style-two" id="spk">
+   
+
+    <!-- Speakers Section Two -->
+    <section class="speakers-section-two style-two alternate" id="speakers-section">
+        <span class="float-text">Event Speaker</span>
+
+
         <div class="anim-icons">
             <span class="icon icon-cross-1"></span>
             <span class="icon icon-circle-12"></span>
+            <span class="icon icon-circle-9"></span>
+            <span class="icon icon-twist-line-3"></span>
         </div>
-        <span class="float-text">Will be updated shortly!</span>
         <div class="auto-container">
             <div class="sec-title">
-                <h2>Speakers</h2>
-            </div>
+                <h2>Event Speakers</h2>
+            </div>    
+            <!-- Speakers Division-->
+        <ul class="speakers-type-list">
+            <!--<li class="ML">Machine Learning</li>-->
+            <li class="Networking">Networking</li>
+            <li class="all speakers-active">All</li>
+            <!--<li class="IOT">IOT</li>-->
+            <li class="Leadership">Leadership Track</li>
+        </ul>
+        <!-- End speakers division-->        
 
-            <div class="speaker-tabs tabs-box">
-                <div class="row">
-                    <div class="thumb-column col-lg-6 col-md-12 col-sm-12 order-2">
-                        <ul class="tab-buttons clearfix">
-                            <li class="tab-btn" data-tab="#speaker-1"><div class="thumb"><img src="images/resource/0.jpeg" alt=""></div></li>
-                            <li class="tab-btn active-btn" data-tab="#speaker-2"><div class="thumb"><img src="images/resource/1.jpeg" alt=""></div></li>
-                            <!--<li class="tab-btn" data-tab="#speaker-3"><div class="thumb"><img src="images/resource/speaker-thumb-3.png" alt=""></div></li>
-                            <li class="tab-btn" data-tab="#speaker-4"><div class="thumb"><img src="images/resource/speaker-thumb-4.png" alt=""></div></li>
-                            <li class="tab-btn" data-tab="#speaker-5"><div class="thumb"><img src="images/resource/speaker-thumb-5.png" alt=""></div></li>
-                            <li class="tab-btn" data-tab="#speaker-6"><div class="thumb"><img src="images/resource/speaker-thumb-6.png" alt=""></div></li>-->
-                        </ul>
+            <div class="row">
+                <!-- Feature Block -->
+                <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow zoomIn Leadershipis">
+                    <div class="image-box">
+                        <figure class="image"><img src="images/resource/imbesat.jpg" alt=""></figure>
+                        <div class="overlay-box">
+                            <a href="#popup_1" class="link view-speaker ts-image-popup" data-effect="mfp-zoom-in"><span class="flaticon-add-1"></span></a>
+                            <div class="info">
+                                <h5 class="name"><a href="#">Imbesat Ahmad</a></h5>
+                                <span class="designation">Founder, RISE</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="content-column col-lg-6 col-md-12 col-sm-12">
-                        <!--Tabs Content-->  
-                        <div class="tabs-content">
-                            <!--Tab-->
-                            <div class="tab" id="speaker-1">
-                                <div class="content">
-                                    <!-- Speaker Block -->
-                                    <div class="speaker-block">
-                                        <div class="inner-box">
-                                            <div class="image-box">
-                                                <figure class="image"><img src="images/resource/0.jpeg" alt=""></figure>
+                    <!-- popup start-->
+                    <div id="popup_1" class="container ts-speaker-popup mfp-hide">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="ts-speaker-popup-img">
+                                    <img src="images/resource/imbesat.jpg" alt="">
+                                </div>
+                            </div><!-- col end-->
+                            <div class="col-lg-6">
+                                <div class="ts-speaker-popup-content">
+                                    <h3 class="ts-title">Imbesat Ahmad</h3>
+                                    <span class="speakder-designation">Founder, RISE</span>
+                                    <p>
+                                        Imbesat pursued Integrated M. Sc., Physics at IIT Kharagpur. Hailing from Patna, Bihar, Imbesat has been actively involved in raising awareness about latest study techniques across India. He was invited, and had subsequently mentored and taught IIT-JEE aspirants at the acclaimed Super - 30, Patna.
+                                        Equalizing educational opportunities for underprivileged students in Kashmir - Building tech. based educational products at RISE. 
+                                    </p>
+                                    <h4 class="session-name">
+                                        Sessions by Imbesat
+                                    </h4>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="speaker-session-info">
+                                                <h4>Day 1</h4>
+                                                <span> Updates coming soon!</span>
+                                                <p> ... </p>
                                             </div>
-                                            <div class="lower-content">
-                                                <div class="info-box">
-                                                    <h3 class="name">Subodh Gajare</h3>
-                                                    <span class="designation">Senior Solution Architect, Cisco</span>
-                                                </div>
-
-                                                <div class="text">Architect for solving business challenges & achieving Digitisation outcomes in Enterprise,Service Provider IoT AIML</div>
-
-                                                <ul class="social-links">
-                                                    <!--<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>-->
-                                                    <li><a href="https://www.linkedin.com/in/subodhgajare/"><i class="fab fa-linkedin"></i></a></li>
-                                                    <!--<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>-->
-                                                    <!--<li><a href="#"><i class="fab fa-dribbble"></i></a></li>-->
-                                                </ul>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="speaker-session-info">
+                                                <h4>Day 2</h4>
+                                                <span> Updates coming soon!</span>
+                                                <p> ... </p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <!--Tab / Active Tab-->
-                            <div class="tab active-tab" id="speaker-2">
-                                <div class="content">
-                                    <!-- Speaker Block -->
-                                    <div class="speaker-block">
-                                        <div class="inner-box">
-                                            <div class="image-box">
-                                                <figure class="image"><img src="images/resource/1.jpeg" alt=""></figure>
-                                            </div>
-                                            <div class="lower-content">
-                                                <div class="info-box">
-                                                    <h3 class="name">Imbesat Ahmad</h3>
-                                                    <span class="designation">Founder, RiSE</span>
-                                                </div>
-
-                                                <div class="text"> Equalizing educational opportunities for underprivileged students in Kashmir - Building tech. based educational products at RiSE. </div>
-
-                                                <ul class="social-links">
-                                                    <li><a href="https://www.linkedin.com/in/imbesatahmad1/"><i class="fab fa-linkedin"></i></a></li>
-                                                    <!--<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>-->
-                                                </ul>
-                                            </div>
-                                        </div>
+                                    <div class="ts-speakers-social">
+                                        <a href="https://www.facebook.com/imbe7at"><i class="fab fa-facebook"></i></a>
+                                        <a href="https://www.linkedin.com/in/imbesat-ahmad-b2465222/"><i class="fab fa-linkedin"></i></a>
+                                        
                                     </div>
-                                </div>
-                            </div>
-
-                            <!--Tab-->
-                            <div class="tab" id="speaker-3">
-                                <div class="content">
-                                    <!-- Speaker Block -->
-                                    <div class="speaker-block">
-                                        <div class="inner-box">
-                                            <div class="image-box">
-                                                <figure class="image"><img src="images/resource/speaker.png" alt=""></figure>
-                                            </div>
-                                            <div class="lower-content">
-                                                <div class="info-box">
-                                                    <h3 class="name">Asuncion Degrazia</h3>
-                                                    <span class="designation">MARKETING MANAGER</span>
-                                                </div>
-
-                                                <div class="text">Saperet tibique delicatissimi per et, laudem<br> propriae cotidieuo. Ea agam postu</div>
-
-                                                <ul class="social-links">
-                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Tab-->
-                            <div class="tab" id="speaker-4">
-                                <div class="content">
-                                    <!-- Speaker Block -->
-                                    <div class="speaker-block">
-                                        <div class="inner-box">
-                                            <div class="image-box">
-                                                <figure class="image"><img src="images/resource/speaker.png" alt=""></figure>
-                                            </div>
-                                            <div class="lower-content">
-                                                <div class="info-box">
-                                                    <h3 class="name">Otha Shoji</h3>
-                                                    <span class="designation">MARKETING MANAGER</span>
-                                                </div>
-
-                                                <div class="text">Saperet tibique delicatissimi per et, laudem<br> propriae cotidieuo. Ea agam postu</div>
-
-                                                <ul class="social-links">
-                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Tab-->
-                            <div class="tab" id="speaker-5">
-                                <div class="content">
-                                    <!-- Speaker Block -->
-                                    <div class="speaker-block">
-                                        <div class="inner-box">
-                                            <div class="image-box">
-                                                <figure class="image"><img src="images/resource/speaker.png" alt=""></figure>
-                                            </div>
-                                            <div class="lower-content">
-                                                <div class="info-box">
-                                                    <h3 class="name">Junko Kazmer</h3>
-                                                    <span class="designation">MARKETING MANAGER</span>
-                                                </div>
-
-                                                <div class="text">Saperet tibique delicatissimi per et, laudem<br> propriae cotidieuo. Ea agam postu</div>
-
-                                                <ul class="social-links">
-                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Tab-->
-                            <div class="tab" id="speaker-6">
-                                <div class="content">
-                                    <!-- Speaker Block -->
-                                    <div class="speaker-block">
-                                        <div class="inner-box">
-                                            <div class="image-box">
-                                                <figure class="image"><img src="images/resource/speaker.png" alt=""></figure>
-                                            </div>
-                                            <div class="lower-content">
-                                                <div class="info-box">
-                                                    <h3 class="name">Ghislaine Ho</h3>
-                                                    <span class="designation">MARKETING MANAGER</span>
-                                                </div>
-
-                                                <div class="text">Saperet tibique delicatissimi per et, laudem<br> propriae cotidieuo. Ea agam postu</div>
-
-                                                <ul class="social-links">
-                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div><!-- ts-speaker-popup-content end-->
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Feature Block -->
+                <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow zoomIn Networking">
+                    <div class="image-box">
+                        <figure class="image"><img src="images/resource/subodh3.jpg" alt=""></figure>
+                        <div class="overlay-box">
+                            <a href="#popup_2" class="link view-speaker ts-image-popup" data-effect="mfp-zoom-in"><span class="flaticon-add-1"></span></a>
+                            <div class="info">
+                                <h5 class="name"><a href="#">Subodh Gajare</a></h5>
+                                <span class="designation">SENIOR SOLUTION ARCHITECT, CISCO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- popup start-->
+                    <div id="popup_2" class="container ts-speaker-popup mfp-hide">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="ts-speaker-popup-img">
+                                    <img src="images/resource/subodh3.jpg" alt="">
+                                </div>
+                            </div><!-- col end-->
+                            <div class="col-lg-6">
+                                <div class="ts-speaker-popup-content">
+                                    <h3 class="ts-title">Subodh Gajare</h3>
+                                    <span class="speakder-designation">SENIOR SOLUTION ARCHITECT, CISCO</span>
+                                    <p>
+                                        Architect for solving business challenges & achieving Digitisation outcomes in Enterprise,Service Provider IoT AIML
+                                    </p>
+                                    <h4 class="session-name">
+                                        Sessions by Subodh
+                                    </h4>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="speaker-session-info">
+                                                <h4>Day 1</h4>
+                                                <span>will be Updated soon</span>
+                                                <p> ... </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="speaker-session-info">
+                                                <h4>Day 1</h4>
+                                                <span>Will be updated soon</span>
+                                                <p> ... </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ts-speakers-social">
+                                        <a href="https://www.facebook.com/subodh.gajare.3"><i class="fab fa-facebook"></i></a>
+                                        <a href="https://twitter.com/subodhgajare?lang=en"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.linkedin.com/in/subodhgajare/?originalSubdomain=in"><i class="fab fa-linkedin"></i></a>
+                                    </div>
+                                </div><!-- ts-speaker-popup-content end-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                   
+
+
             </div>
         </div>
     </section>
+    <!--End Speakers Section -->
+
     <!--End Speakers Section -->
 
     <!-- Pricing Section -->
@@ -1414,7 +1551,7 @@
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#sch">Schedule</a></li>
-                    <li><a href="#spk">Speakers</a></li>
+                    <li><a href="#speakers-section">Speakers</a></li>
                     <li><a href="#spns">Sponsors</a></li>
                     <!--<li><a href="#">Schedule</a></li>-->
                     <!--<li><a href="#">Venue</a></li>-->
@@ -1459,9 +1596,90 @@
 <script src="js/jquery.fancybox.js"></script>
 <script src="js/appear.js"></script>
 <script src="js/owl.js"></script>
+<script src="js/magnific-popup.min.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/countdown.js"></script>
 <script src="js/script.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($){
+
+        $(".speakers-type-list li").click(function(){
+            $(".speakers-type-list li").removeClass('speakers-active');
+            $(this).addClass("speakers-active");
+            if($(this).hasClass("Networking")){
+                $(".auto-container .row .speaker-block-two").css("transform","scale(0)").css("display","none");
+                $(".auto-container .row .Networking").css("transform","scale(1)").css("display","block");
+
+
+            }
+            else if($(this).hasClass("Leadership")){
+                $(".auto-container .row .speaker-block-two").css("transform","scale(0)").css("display","none");
+                $(".auto-container .row .Leadershipis").css("transform","scale(1)").css("display","block");
+
+
+            }
+            else if($(this).hasClass("IOT")){
+                $(".auto-container .row .speaker-block-two").css("transform","scale(0)").css("display","none");
+                $(".auto-container .row .IOT").css("transform","scale(1)").css("display","block");
+
+
+            }
+            else if($(this).hasClass("ML")){
+                $(".auto-container .row .speaker-block-two").css("transform","scale(0)").css("display","none");
+                $(".auto-container .row .ML").css("transform","scale(1)").css("display","block");
+
+
+            }
+            else  if($(this).hasClass("all")){
+               $(".auto-container .row .speaker-block-two").css("transform","scale(1)").css("display","block"); 
+            }
+        })
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("feb 28, 2020 09:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("days").innerHTML = days +"";
+  document.getElementById("hours").innerHTML = hours+"";
+  document.getElementById("minutes").innerHTML = minutes+"";
+  document.getElementById("seconds").innerHTML =seconds+"";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 </body>
 
 <!-- Mirrored from sitetemplate.demo.ithemeslab.com/fizcon/index-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Feb 2019 10:40:57 GMT -->
